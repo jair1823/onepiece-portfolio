@@ -109,17 +109,18 @@ body {
     flex-wrap: wrap;
 }
 
-.arc h3 {
+.arc-title {
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
 .arc-details {
-    width: 500px;
+    width: 50%;
 }
 
 .arc-saga,
+.arc-wiki,
 .arc-chapters,
 .arc-saga {
     margin: 10px 0;
@@ -129,8 +130,13 @@ body {
     font-size: 20px;
 }
 
+.arc-imageContainer {
+    width: 50%;
+}
+
 .arc-imageContainer .arc-image {
-    width: 500px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -313,8 +319,45 @@ Empezar desde el media mas grande
     .menu ul li a {
         justify-content: center;
     }
+    .arc {
+        display: block;
+    }
+    .arc-imageContainer {
+        width: auto;
+        text-align: center;
+    }
+    .arc-details {
+        width: auto;
+        /* font-size: 16px; */
+    }
+    .arc-saga,
+    .arc-wiki,
+    .arc-chapters {
+        margin: .3em 0;
+    }
+    .arc-title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .arc-saga {
+        font-size: .7 em;
+    }
+    .arc-chapters {
+        font-size: 1em;
+    }
+    .arc-wiki {
+        font-size: .8em;
+    }
+    .arc-description {
+        font-size: .8em;
+    }
 }
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .arc-details {
+        width: auto;
+        font-size: 12px;
+    }
+}
 
 @media screen and (max-width:320px) {}
