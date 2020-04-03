@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    flex-wrap: wrap;
 }
 
 .header .logo img {
@@ -58,6 +59,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 300px;
+    flex-wrap: wrap;
 }
 
 .hero h1 {
@@ -104,6 +106,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .arc h3 {
@@ -199,6 +202,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact-form input {
@@ -249,6 +253,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -274,7 +279,7 @@ h6 {
 
 .container {
     /* border: 1px solid red; */
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -282,3 +287,16 @@ h6 {
     height: inherit;
     flex-wrap: inherit;
 }
+
+
+/* Desktop first
+Empezar desde el media mas grande 
+*/
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:480px) {}
+
+@media screen and (max-width:320px) {}
