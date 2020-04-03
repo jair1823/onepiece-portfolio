@@ -158,8 +158,8 @@ body {
 }
 
 .mugiwara {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -300,7 +300,11 @@ h6 {
 Empezar desde el media mas grande 
 */
 
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 0 1em;
+    }
+}
 
 @media screen and (max-width:767px) {
     .header {
@@ -351,12 +355,44 @@ Empezar desde el media mas grande
     .arc-description {
         font-size: .8em;
     }
+    .mugiwara {
+        width: auto;
+        /* esto es para que no se cambie la dimesion cuando hacen wrap */
+        flex-shrink: initial;
+    }
+    .mugiwara-image {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:480px) {
     .arc-details {
         width: auto;
         font-size: 12px;
+    }
+    .mugiwara-detail {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact {
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+    .contact-form h3 {
+        margin-top: 0;
+    }
+    .contact-form button {
+        margin: 1em auto;
+        padding: .5em;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        /* padding: 1px */
+        border: 1px solid transparent;
+        /*padding y border sirven para solucionar el margin colapse*/
     }
 }
 
