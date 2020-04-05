@@ -337,7 +337,7 @@ h6 {
 Empezar desde el media mas grande 
 */
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
     .container {
         padding: 0 1em;
     }
@@ -408,6 +408,7 @@ Empezar desde el media mas grande
     }
     .arc {
         display: block;
+        padding: 1em;
     }
     .arc-imageContainer {
         width: auto;
@@ -449,6 +450,22 @@ Empezar desde el media mas grande
 }
 
 @media screen and (max-width:480px) {
+    .arc-title {
+        font-size: 1.6em;
+        margin-bottom: .3em;
+    }
+    .arc-saga {
+        font-size: .7 em;
+    }
+    .arc-chapters {
+        font-size: 1em;
+    }
+    .arc-wiki {
+        font-size: .9em;
+    }
+    .arc-description {
+        font-size: 1em;
+    }
     .arc-details {
         width: auto;
         font-size: 12px;
