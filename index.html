@@ -21,6 +21,7 @@
 </head>
 
 <body>
+  <i class="icon-hamburger burger-button" id="buger-menu"></i>
   <header class="header">
     <div class="container">
       <figure class="logo">
@@ -31,13 +32,13 @@
       <nav class="menu">
         <ul>
           <li class="link">
-            <a href="#arcos">Arcos</a>
+            <a class="menu-link" href="#arcos">Arcos</a>
           </li>
           <li class="link">
-            <a href="#mugiwaras">Mugiwaras</a>
+            <a class="menu-link" href="#mugiwaras">Mugiwaras</a>
           </li>
           <li class="link">
-            <a href="#redes">Redes</a>
+            <a class="menu-link" href="#redes">Redes</a>
           </li>
         </ul>
       </nav>
@@ -169,10 +170,8 @@
     <div class="container">
       <form class="contact-form">
         <h3>Hablemos de One Piece</h3>
-
         <i class="icon-envelop"></i>
         <input type="text" placeholder="Déjame tu email" id="email">
-
         <button>Enviar</button>
       </form>
       <div class="social">
@@ -194,6 +193,32 @@
       </div>
     </div>
   </footer>
+  <script>
+    const menu = document.querySelector('.menu');
+    const burgerButton = document.querySelector('#buger-menu');
+
+    const anclas = document.querySelectorAll('.menu-link');
+    
+    anclas.forEach((a)=>{
+      a.addEventListener('click',hide);
+    });
+
+    
+    burgerButton.addEventListener('click', hideShow);
+
+    function hide() {
+      menu.classList.remove('is-active');
+    }
+
+    function hideShow() {
+      if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+      } else {
+        menu.classList.add('is-active');
+      }
+
+    }
+  </script>
 </body>
 
 </html>
