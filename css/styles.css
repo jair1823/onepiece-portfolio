@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?7f579j');
+    src: url('fonts/icomoon.eot?7f579j#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?7f579j') format('truetype'), url('fonts/icomoon.woff?7f579j') format('woff'), url('fonts/icomoon.svg?7f579j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -220,12 +244,8 @@ body {
     border-color: gray;
     border-style: solid;
     border-radius: 5px;
-    padding: 10px 20px 10px 25px;
-    background-image: url('../images/envelope.svg');
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 5px;
+    padding: 10px 20px 10px 32px;
+    text-align: center;
 }
 
 .contact-form button {
@@ -238,24 +258,10 @@ body {
     margin-top: 10px;
 }
 
-.social-link {
+.social i {
     display: inline-block;
-    width: 50px;
-    height: 50px;
     margin: 0 10px;
-    background-size: 50px 50px;
-}
-
-.social-link.twitter {
-    background-image: url('../images/twitter.svg');
-}
-
-.social-link.facebook {
-    background-image: url('../images/facebook.svg');
-}
-
-.social-link.instagram {
-    background-image: url('../images/instagram.svg');
+    font-size: 50px;
 }
 
 .footer {
@@ -298,6 +304,15 @@ h6 {
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+
+/* video */
+
+.html-video {
+    width: 100%;
+    /* max-width: 100%; */
+    height: auto;
 }
 
 
@@ -426,9 +441,42 @@ Empezar desde el media mas grande
 
 @media screen and (max-width:320px) {
     .hero {
-        padding: 2em 1em    ;
+        padding: 2em 1em;
     }
     .hero h1 {
         font-size: 1.2em;
     }
+}
+
+.icon-envelop {
+    font-size: 1.3em;
+    position: absolute;
+    padding: 10px;
+    /* min-width: 40px; */
+    color: #000;
+    z-index: 1;
+}
+
+.icon-envelop:before {
+    content: "\e901";
+}
+
+.icon-instagram:before {
+    content: "\e902";
+}
+
+.icon-twitter:before {
+    content: "\e903";
+}
+
+.icon-facebook:before {
+    content: "\e904";
+}
+
+.icon-facebook1:before {
+    content: "\e905";
+}
+
+.icon-hamburger:before {
+    content: "\e900";
 }
