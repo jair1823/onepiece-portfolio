@@ -107,11 +107,11 @@
   </section>
 
   <!-- <video src="./video/f8.mp4" controls class="html-video"></video> -->
-  <div class="container">
+  <div class="container" id="mugiwaras">
     <h2 class="mugiwaras-list-title">Mugiwaras</h2>
   </div>
 
-  <section class="mugiwaras-list" id="mugiwaras">
+  <section class="mugiwaras-list">
     <div class="container">
 
       <article class="mugiwara">
@@ -198,12 +198,12 @@
     const burgerButton = document.querySelector('#buger-menu');
 
     const anclas = document.querySelectorAll('.menu-link');
-    
-    anclas.forEach((a)=>{
-      a.addEventListener('click',hide);
+
+    anclas.forEach((a) => {
+      a.addEventListener('click', hide);
     });
 
-    
+
     burgerButton.addEventListener('click', hideShow);
 
     function hide() {
