@@ -14,6 +14,11 @@ body {
     justify-content: space-between;
     height: 80px;
     flex-wrap: wrap;
+    /* navbar fijo */
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 3;
 }
 
 .header .logo img {
@@ -304,6 +309,26 @@ Empezar desde el media mas grande
     .container {
         padding: 0 1em;
     }
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    .hero h1 {
+        background: rgba(0, 0, 0, .5);
+        font-size: 2em;
+        z-index: 2;
+    }
+    .hero img {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -394,6 +419,16 @@ Empezar desde el media mas grande
         border: 1px solid transparent;
         /*padding y border sirven para solucionar el margin colapse*/
     }
+    .hero h1 {
+        font-size: 1.5em;
+    }
 }
 
-@media screen and (max-width:320px) {}
+@media screen and (max-width:320px) {
+    .hero {
+        padding: 2em 1em    ;
+    }
+    .hero h1 {
+        font-size: 1.2em;
+    }
+}
